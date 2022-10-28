@@ -25,3 +25,5 @@ whitelist:
     - "172.16.0.1/16"
 EOT
 fi
+
+sudo systemctl reload crowdsec
