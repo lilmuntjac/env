@@ -12,9 +12,9 @@ bash <(curl -L https://raw.githubusercontent.com/Elispus/env/main/install-packag
 ```
 ### GPU related packages
 nvidia driver, nvtop, CUDA and cuDNN
-go to ```/opt/env``` to run the rest for the script
+go to ```/opt/env``` to run the rest for the script, flag ```-p``` for enable NVIDIA Persistence Daemon.
 ```
-sudo bash install-nvidia.sh
+sudo bash install-nvidia.sh -p
 ```
 ### Variable and script
 go to ```/opt/env``` to run the rest for the script

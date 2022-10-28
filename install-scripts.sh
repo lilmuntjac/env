@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # some useful variable
-REPO_LINK="https://github.com/Elispus/env"
+REPO_LINK="https://github.com/lilmuntjac/env"
 INSTALL_PATH="/opt/env"
 BIN_PATH="/usr/local/bin"
 
