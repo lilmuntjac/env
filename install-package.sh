@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# exit on error
+set -eo pipefail
+
 # Download the repo and run this file for all installation
 REPO_LINK="https://github.com/lilmuntjac/env"
 INSTALL_PATH="/opt/env"

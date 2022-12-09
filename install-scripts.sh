@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# exit on error
+set -eo pipefail
+
 # some useful variable
 REPO_LINK="https://github.com/lilmuntjac/env"
 INSTALL_PATH="/opt/env"

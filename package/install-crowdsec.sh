@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# exit on error
+set -eo pipefail
+
 CONFIG_PATH="/etc/crowdsec/parsers/s02-enrich/custom_whitelist.yaml"
 
 # extends the sudo timeout for another 5 minutes

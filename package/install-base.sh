@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# exit on error
+set -eo pipefail
+
 # extends the sudo timeout for another 5 minutes
 sudo -v
 

@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# exit on error
+set -eo pipefail
+
 # change to /tmp
 cd /tmp
 
