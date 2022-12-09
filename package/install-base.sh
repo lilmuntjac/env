@@ -14,7 +14,7 @@ sudo dnf -y makecache
 
 # time sync
 sudo systemctl stop chronyd
-sudo chronyd -q  'server ntp2.ntu.edu.tw iburst'
+sudo chronyd -q  'server tick.stdtime.gov.tw iburst'
 sudo systemctl restart chronyd
 
 # common monitor tools
