@@ -3,7 +3,7 @@
 ```
 bash <(curl -L https://raw.githubusercontent.com/lilmuntjac/env/main/disable-videodriver.sh)
 ```
-Remember to reboot the server before continue to the next step.
+:exclamation: Remember to reboot the server before continue to the next step.
 ## Download the repository and start installation process
 ### Common packages
 include common development tools, dependency, monitor tools, docker
