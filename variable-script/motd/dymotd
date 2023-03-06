@@ -22,14 +22,11 @@ LOAD15=`cat /proc/loadavg | awk {'print $3'}`
 GREEN="\033[1;32m"
 RESET="\033[0m"
 logo="\
-                ,,           ,,         
-    .g8\"\"\"bgd \`7MM           db         
-  .dP'     \`M   MM                      
-  dM'       \`   MM  ,6\"Yb. \`7MM ,pP\"Ybd 
-  MM            MM 8)   MM   MM 8I   \`\" 
-  MM.           MM  ,pm9MM   MM \`YMMMa. 
-  \`Mb.     ,'   MM 8M   MM   MM L.   I8 
-    \`\"bmmmd'  .JMML\`Moo9^Yo.JMMLM9mmmP'\
+
+    888b.   d8 .d88b. 8888    .d88b 8             w              
+    8  .8  dP8 8P  Y8 8ww.    8P    8 8   8 d88b w8ww .d88b 8d8b 
+    8wwK' dPw8 8b  d8   \`8    8b    8 8b d8 \`Yb.  8   8.dP' 8P   
+    8  Yb    8 \`Y88P' Y88P    \`Y88P 8 \`Y8P8 Y88P  Y8P \`Y88P 8  
 "
 printf "${GREEN}${logo}\n${RESET}"
 echo -e "\
