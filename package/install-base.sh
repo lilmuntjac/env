@@ -24,6 +24,6 @@ sudo dnf install -y htop
 sudo dnf install -y tar wget curl git tmux zsh
              
 # python build dependency
-sudo dnf install -y make gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel
+sudo dnf install -y make gcc patch zlib-devel bzip2 bzip2-devel readline-devel sqlite sqlite-devel openssl-devel tk-devel libffi-devel xz-devel libuuid-devel gdbm-libs libnsl2
 
 echo "Done installing base environment."
