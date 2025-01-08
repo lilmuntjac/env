@@ -24,12 +24,13 @@ printf "${RESET}"
 printf "\n"
 
 df -h --output=target,size,avail,pcent,source  |
-  tail -n +2 |     # remove header
-  grep -v tmpfs |  # remove tmpfs
-  grep -v udev |   # remove udev
-  grep -v : |      # remove sshfs
-  grep -v docker | # remove docker
-  grep -v snap |   # remove snap
+  tail -n +2 |       # remove header
+  grep -v tmpfs |    # remove tmpfs
+  grep -v udev |     # remove udev
+  grep -v : |        # remove sshfs
+  grep -v docker |   # remove docker
+  grep -v snap |     # remove snap
+  grep -v efivarfs | # remove efi variables
   while read -a line; do
     printf "  "
     if [ "${line[3]%?}" -gt 80 ]; then
