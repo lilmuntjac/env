@@ -31,6 +31,7 @@ df -h --output=target,size,avail,pcent,source  |
   grep -v docker |   # remove docker
   grep -v snap |     # remove snap
   grep -v efivarfs | # remove efi variables
+  grep -v nvim |     # remove nvim
   sort |
   while read -a line; do
     printf "  "
