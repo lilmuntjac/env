@@ -6,6 +6,11 @@ set -eo pipefail
 # extends the sudo timeout for another 5 minutes
 sudo -v
 
-# install nvidia driver 
-sudo dnf config-manager --add-repo=https://developer.download.nvidia.com/compute/cuda/repos/rhel9/x86_64/cuda-rhel9.repo
-sudo dnf -y module install nvidia-driver:latest-dkms
+# install nvidia driver from ELRepo
+# add the ELRepo pubilc keys
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-elrepo.org
+sudo rpm --import https://www.elrepo.org/RPM-GPG-KEY-v2-elrepo.org
+
+# Install ELRepo and NVIDIA Proprietary Driver
+sudo dnf install -y https://www.elrepo.org/elrepo-release-9.el9.elrepo.noarch.rpm
+sudo dnf --enablerepo=elrepo-kmod install -y kmod-nvidia nvidia-x11-drv
