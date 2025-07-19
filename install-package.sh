@@ -13,5 +13,4 @@ sudo git clone "${REPO_LINK}" "${INSTALL_PATH}"
 cd ${INSTALL_PATH}/package
 
 sudo bash install-base.sh
-sudo bash install-docker.sh
 sudo bash install-crowdsec.sh
