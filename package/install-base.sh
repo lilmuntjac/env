@@ -13,6 +13,7 @@ sudo dnf groupinstall -y "Development Tools"
 sudo dnf -y makecache
 
 # time sync
+sudo dnf -y install chrony
 sudo sed -i 's|^pool .*|server tick.stdtime.gov.tw iburst|' /etc/chrony.conf
 sudo systemctl restart chronyd
 sudo systemctl enable chronyd
