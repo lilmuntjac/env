@@ -9,7 +9,7 @@ CONFIG_PATH="/etc/crowdsec/parsers/s02-enrich/custom_whitelist.yaml"
 sudo -v
 
 cd /tmp
-curl -s https://packagecloud.io/install/repositories/crowdsec/crowdsec/script.rpm.sh | sudo bash
+curl -s curl -s https://install.crowdsec.net | sudo sh
 
 sudo dnf install -y crowdsec
 sudo dnf install -y crowdsec-firewall-bouncer-nftables
