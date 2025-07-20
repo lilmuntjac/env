@@ -20,7 +20,7 @@ sudo systemctl enable chronyd
 sudo chronyc makestep
 
 # common monitor tools
-sudo dnf install -y htop 
+sudo dnf install -y pciutils htop 
 
 # common use package
 sudo dnf install -y tar wget curl git tmux zsh
